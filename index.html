@@ -2,14 +2,36 @@
 <html>
 
 <head>
-    <title>Пример вставки видео YouTube</title>
+    <title>Пример адаптивного видео YouTube</title>
+    <style>
+        /* Стили для контейнера видео */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            /* 16:9 соотношение сторон для видео */
+        }
+
+        /* Стили для встроенного видео */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <iframe width="1855" height="795" src="https://www.youtube.com/embed/y65BZbNB0YA"
-        title="Телеграм бот на Python / #8 – Web Apps. Полноценные веб приложения в Телеграм" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+    <h1>Пример адаптивного видео YouTube</h1>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/y65BZbNB0YA"
+            title="Телеграм бот на Python / #8 – Web Apps. Полноценные веб приложения в Телеграм" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
 </body>
 
 </html>
