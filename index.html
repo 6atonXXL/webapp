@@ -22,12 +22,30 @@
             height: 100%;
         }
     </style>
-</head>
 
 <body>
     <div class="video-container">
         <video src="https://disk.yandex.ru/i/Nn3Jv2svpyiCqA"></video>
     </div>
+    <button id="closeButton" style="display: none;">Закрыть веб-приложение</button>
+
+    <script>
+        // Получаем ссылку на элементы video и кнопку
+        var video = document.getElementById('video-container');
+        var closeButton = document.getElementById('closeButton');
+
+        // Добавляем обработчик события завершения видео
+        video.addEventListener('ended', function () {
+            // При завершении видео показываем кнопку
+            closeButton.style.display = 'block';
+        });
+
+        // Добавляем обработчик события клика на кнопку
+        closeButton.addEventListener('click', function () {
+            // При нажатии на кнопку закрываем веб-приложение (можно использовать window.close() если приложение открыто в отдельном окне)
+            window.close();
+        });
+    </script>
 </body>
 
 </html>
