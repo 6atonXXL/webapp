@@ -2,50 +2,21 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пример адаптивного видео YouTube</title>
-    <style>
-        /* Стили для контейнера видео */
-        .video-container {
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-bottom: 56.25%;
-            /* 16:9 соотношение сторон для видео */
-        }
-
-        /* Стили для встроенного видео */
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 
 <body>
-    <div class="video-container">
-        <video src="https://disk.yandex.ru/i/Nn3Jv2svpyiCqA"></video>
-    </div>
-    <button id="closeButton" style="display: none;">Закрыть веб-приложение</button>
-
-    <script>
-        // Получаем ссылку на элементы video и кнопку
-        var video = document.getElementById('video-container');
-        var closeButton = document.getElementById('closeButton');
-
-        // Добавляем обработчик события завершения видео
-        video.addEventListener('ended', function () {
-            // При завершении видео показываем кнопку
-            closeButton.style.display = 'block';
-        });
-
-        // Добавляем обработчик события клика на кнопку
-        closeButton.addEventListener('click', function () {
-            // При нажатии на кнопку закрываем веб-приложение (можно использовать window.close() если приложение открыто в отдельном окне)
-            window.close();
-        });
-    </script>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@usuario2989101/video/7262140334795181318"
+        data-video-id="7262140334795181318" style="max-width: 605px;min-width: 325px;">
+        <section> <a target="_blank" title="@usuario2989101"
+                href="https://www.tiktok.com/@usuario2989101?refer=embed">@usuario2989101</a> piorando <a title="fy"
+                target="_blank" href="https://www.tiktok.com/tag/fy?refer=embed">#fy</a> <a target="_blank"
+                title="♬ original sound - 🩻🧿🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+                href="https://www.tiktok.com/music/original-sound-7237523018846309146?refer=embed">♬ original sound -
+                🩻🧿🏴󠁧󠁢󠁳󠁣󠁴󠁿</a> </section>
+    </blockquote>
+    <script async src="https://www.tiktok.com/embed.js"></script>
 </body>
 
 </html>
