@@ -1,5 +1,5 @@
 let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
-let btn = document.getElementById("id");
+let btn = document.getElementById("btn");
 tg.expand(); //расширяем на все окно  
 
 btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
