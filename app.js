@@ -4,9 +4,7 @@ tg.expand(); //расширяем на все окно
 
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#FF00FF";
-
-let ipAddress = ""; // Переменная для хранения IP-адреса
-
+tg.MainButton.show();
 
 Telegram.WebApp.onEvent('mainButtonClicked', function(){
       tg.sendData("some string that we need to send"); 
