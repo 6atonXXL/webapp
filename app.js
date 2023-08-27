@@ -14,7 +14,6 @@ btn.addEventListener('click', function(){ //вешаем событие на н�
 
 Telegram.WebApp.onEvent('mainButtonClicked', function(){
       
-      $.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
-      tg.sendData(data.ip); 
-});
-
+    $.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+    tg.sendData(data.ip); 
+})});
